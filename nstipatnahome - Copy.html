@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+a { text-decoration:none;} 
+
+.a {
+	height:100%;
+	width:50%;
+	float:right;
+	padding-left:200px;
+	padding-top:50px;
+	}
+#b { margin-left:260px;
+		margin-button:20px;}
+.headerdiv{
+          border: 4px outset black; width:100%px; height:90px;
+         }
+.leftdiv{
+border: 3px outset black; width:250px; height:500px;
+        background-color: rgb(148, 155, 198); 
+        border-radius: 25px;
+	  float:right;
+		margin-right:30px;
+		margin-top:10px; }
+
+.rightdiv{
+border: 3px outset black; width:250px; height:500px;
+        background-color: rgb(148, 155, 198); 
+        border-radius: 25px;
+	  float:left;
+		margin-left:30px;
+		margin-top:10px; }
+
+.container {
+  position: relative;
+  width: 22%;
+	height:30%;
+	float:left;
+	margin:20px;
+      }
+ 
+
+.myDiv {
+  border: 10px outset red; width:100%; height:1000px;
+  background-color: rgb(148, 155, 198); 
+  border-radius: 25px;
+}
+
+.back_div_sir {
+  border: 10px outset red; width:100%; height:539px;
+  background-color: rgb(148, 155, 198); 
+  border-radius: 35px;
+}
+
+
+  
+  
+  
+  
+}
+
+.divforslider {
+  border: 5px outset black; width:100%; height:550px;
+  background-color: rgb(179, 179, 179); 
+ 
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+      float:right;
+      padding-right: 450px
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100PX;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+	margin-top:-100px;
+	margin-left:60px;
+  text-align: center;
+	float: center;
+
+	width:150px;
+	
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+/*.text {
+  background-color: rgb(184,162,194);
+  color: black;
+  font-size: 10px;
+
+
+}*/
+
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  max-height: 500px;
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 25px;
+  border: 2px outset blue;
+	float:center;
+	word-wrap: break-word;
+  
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  background-color: rgb(184,162,194);
+  font-size: 15px;
+
+
+  bottom: 12px;
+
+  text-align: center;
+
+}
+
+/* Number text (1/6 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 1}
+}
+ 
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+<div class="headerdiv">
+<img src="header.jpg" style="width: 100%">
+
+</div>
+<div class="divforslider">
+<div class="leftdiv">
+<marquee direction="up" height="450px" onmouseover="stop();" onmouseout="start();" scrolldelay='100'>
+<ul>
+<li> <a href=https://nstiwpatna.dgt.gov.in/press-release>  PRESS RELEASE IN NSTI(W)PATNA</a></li><br>
+<li> <a href="https://nstiwpatna.dgt.gov.in/what-s-new"> WHAT'S NEW SECTIONS </a></li><br>
+<li> <a href="https://nstiwpatna.dgt.gov.in/alumni"> NSTI ALMUNI </a></li><br>
+<li> <a href="https://nstiwpatna.dgt.gov.in/rti">RTI OF NSTI PATNA  </a> </li><BR>
+<li> <a href="https://cndgt.attendance.gov.in/"> STAFF ATTENDENCE OF NSTI PATNA   </a></li><BR>
+<li> <a href="https://cndgt.dgtskillattendance.ac.in/"> STUDENTS ATTENDENCE OF NSTI PATNA   </a></li><BR>
+<li> <a href="https://saccess.nic.in/"> e OFFICE </a></li><br>
+<li> <a href="https://email.gov.in/">Gov Email </a></li><br>
+<li> <a href="https://nstiwpatna.dgt.gov.in/industry-connect"> INDUSTRY CONNECT NSTI PATNA   </a></li><BR>
+<li> <a href="https://dgt.gov.in/newsletter"> NEWS LETTER  </a></li><BR>
+
+
+</ul></marquee></div>
+<div class="rightdiv">
+<marquee direction="up" height="450px" onmouseover="stop();" onmouseout="start();" scrolldelay='100'>
+<ul>
+<li><a href="https://nstiwpatna.dgt.gov.in/">  CLICK HERE TO OFFICIAL WEBSITE OF NSTI(W)PATNA</a></li><br>
+<li><a href="https://nstiwpatna.dgt.gov.in/training-calendar"> TRAINING CALENDER OF NSTI PATNA </a></li><br>
+<li> <a href="https://nstiwpatna.dgt.gov.in/alumni"> NSTI ALMUNI </a></li><br>
+<li> <a href="https://nstiwpatna.dgt.gov.in/rti">RTI OF NSTI PATNA  </a> </li><BR>
+<li> <a href="https://cndgt.attendance.gov.in/"> STAFF ATTENDENCE OF NSTI PATNA   </a></li><BR>
+<li> <a href="https://cndgt.dgtskillattendance.ac.in/"> STUDENTS ATTENDENCE OF NSTI PATNA   </a></li><BR>
+<li> <a href="https://saccess.nic.in/"> e OFFICE </a></li><br>
+<li> <a href="https://email.gov.in/">Gov Email </a></li><br>
+<li> <a href="https://nstiwpatna.dgt.gov.in/industry-connect"> INDUSTRY CONNECT NSTI PATNA   </a></li><BR>
+<li> <a href="https://dgt.gov.in/newsletter"> NEWS LETTER  </a></li><BR>
+</ul></marquee>
+</div>
+
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+
+<div class=>1 / 6</div>
+
+<img src="slide1.jpg" style="width:100%">
+<div class="text">NSTI (W) PATNA </div>  
+
+
+</div>
+
+
+<div class="mySlides fade">
+  <div class=>2 / 6</div>
+  <img src="slide2.jpg" style="width:100%">
+  <div class="text">PRACTICALS</div>
+</div>
+
+<div class="mySlides fade">
+  <div class=>3 / 6</div>
+  <img src="slide3.jpg" style="width:100%">
+  <div class="text">PROJECTS</div>
+</div>
+
+<div class="mySlides fade">
+  <div class=>4 / 6</div>
+  <img src="slide4.jpg" style="width:100%">
+  <div class="text">TEAM ADIT (IBM)</div>
+</div>
+
+<div class="mySlides fade">
+  <div class=>5 / 6</div>
+  <img src="slide5.jpg" style="width:100%">
+  <div class="text">PRAC. ON SOLDERING </div>
+</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+ 
+</div></div></DIV>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+<h2 style="background-color:DodgerBlue;text-align:center"> 
+Trainers OF ADIT(IBM) @ NSTI(W) PATNA</h2>
+<div class="back_div_sir">
+<div class="a">
+<img src="jitendrasir.png" alt="JITENDRA SIR" width="260px"><br><br>
+<button><a href="https://nstiwpatna.dgt.gov.in/node/1950"><h1>JITENDRA JANGIR
+</h1></a></button>
+<p>Designation :Training Officer (Electronics),Group-'B' Gazetted,Pay Level-7, 
+(IT Nodal Officer ,GeM Buyer,Electronics Mechanic(CITS) Trade , ADIT(IBM) I/c,
+ Training I/c.)
+Email id:jitendra[dot]jangir[at]gov[dot]in</p></div>
+
+
+ 
+<div class="a">
+<img src="nashitsir.png"  alt="nashit sir" width="260px"><br><br>
+<button><a href="data.html"><h1>NASHIT HUMAM</h1></a></button>
+<p>Designation : Master Trainer (edunet)
+@Advance Diploma in Information Technology And cloud Computing
+
+advance pro level in data science and cloud computing </p>
+</div></div>
+  
+<h2 style="background-color:DodgerBlue;text-align:center"> 
+STUDENTS OF ADIT(IBM) @ NSTI(W) PATNA</h2>
+
+<div class="myDiv">
+<div class="container">
+<img src="umesh.png" alt="umesh" class="image" style="width:100%">
+<div class="middle"> 
+<div class="text"> Know more <br> About Me </div>
+</div></div>  
+<div class="container">
+<img src="TANNUPNG.png" alt="umesh" class="image" style="width:100%">
+<div class="middle">
+<div class="text"> Know more <br> About Me </div>
+</div></div>
+
+<div class="container">
+ <a href="https://damodar12345678.github.io/Profile/">
+  <img src="damodar.png" alt="umesh" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text"> Know more <br> About Me  </div>
+</div></div></a>
+<div class="container">
+
+  <a href="https://ranjitkaj.github.io/My-CV/">
+<img src="ranjita.png" alt="umesh" class="image" style="width:100%">
+
+  <div class="middle">
+    <div class="text">  Know more <br> About Me </div>
+</div></a></div>
+
+
+<div class="container">
+  <img src="amit.png" alt="umesh" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text"> Know more <br> About Me </div>
+</div></div>
+
+<div class="container">
+  <img src="ashu.png" alt="umesh" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">  Know more <br> About Me  </div>
+</div></div>
+
+
+<div class="container">
+  <img src="shrey.png" alt="umesh" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">  Know more <br> About Me  </div>
+</div></div>
+
+
+<div class="container">
+  <img src="smriti.png" alt="umesh" class="image" style="width:100%">
+  <div class="middle"> <a href="C:\Users\Asus\Desktop\slide.html"></a>
+    <div class="text"> Know more <br> About Me  </div>
+</div></div>
+
+
+
+<div class="container" id="b">
+  <img src="ranjitt.png" alt="umesh" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text"> Know more <br> About Me  </div>
+</div></div>
+
+
+<div class="container">
+<a href="https://mukeshvishwas.github.io/MY-CV/">
+  <img src="mukesh.png" alt="umesh" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text"> Know more <br> About Me  </div>
+</div></a></div>
+
+<div class="container">
+  <img src="rajesh.png" alt="rajesh" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text"> Know more <br> About Me  </div>
+</div></div>
+
+
+</div></div>
+</div>
+
+  </div>
+</div>
+
+<!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?
+page=8136175&style=0006&nbdigits=5&type=page&initCount=100" 
+title="Free Counter" Alt="web counter"   border="0" /></a>    
+  
+<script>
+var element=document.getElementByTagName('div')
+console.log(element)
+
+
+</script>
+  
+</body>
+</html>
